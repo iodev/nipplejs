@@ -384,8 +384,8 @@ Collection.prototype.processOnMove = function (evt) {
     var force = dist / size;
 
     var raw = {
-        dist: dist,
-        pos: pos
+        distance: dist,
+        position: pos
     };
 
     // If distance is bigger than nipple's size

@@ -160,8 +160,8 @@ export interface JoystickOutputData {
         y: string;
     };
     raw: {
-      dist: number;
-      pos: Position;
+      distance: number;
+      position: Position;
     };
     distance: number;
     force: number;
@@ -286,9 +286,9 @@ export class JoystickManager {
 }
 
 export interface Collection {
-    nipples: any[];
-    idles: any[];
-    actives: any[];
+    nipples: Joystick[];
+    idles: Joystick[];
+    actives: Joystick[];
     ids: number[];
     pressureIntervals: {};
     manager: JoystickManager;
